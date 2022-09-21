@@ -32,7 +32,7 @@ public class Polynomial {
 	public double evaluate (double x) {
 		double sum = 0;
 		for (int i = 0; i < this.coefficients.length; i++) {
-			double c = x;
+			double c = 1;
 			for (int j = 0; j < i; j++)
 				c *= x;
 			sum += coefficients[i] * c;
